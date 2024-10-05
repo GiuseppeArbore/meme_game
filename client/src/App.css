@@ -1,0 +1,151 @@
+/* increase default icon size */
+i.bi {
+  font-size: 25px;
+}
+
+/* desktop sidebar */
+#films-filters .nav .nav-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#films-filters .nav .nav-item:hover .nav-link {
+  background-color: #055c9d;
+  color: white !important;
+}
+
+/* films list */
+#films-list .list-group-item {
+  padding: 1rem;
+}
+
+/* reduced size for icons in list */
+#films-list i.bi {
+  font-size: 18px;
+}
+
+/* custom style for actions column */
+#films-list .list-group-item .actions-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+#films-list .list-group-item .actions {
+  display: flex;
+  gap: .5rem;
+}
+
+#films-list .list-group-item .actions i {
+  color: #555555;
+}
+
+#films-list a.bi-pencil {
+  color: initial;
+}
+
+#films-list a.bi-pencil:hover {
+  color: #f0ad4e;
+}
+
+#films-list i.bi-trash:hover {
+  color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+.wrong-field {
+  border-color: red;
+  border-width: 2px;
+}
+
+.custom-control-input {
+  margin-right: 5px;
+}
+
+/* custom star style */
+#films-list i.bi {
+  cursor: pointer;
+}
+
+#films-list i.bi.bi-star-fill, #films-list i.bi.bi-star:hover {
+  color: #f0ad4e;
+}
+
+#films-list i.bi.bi-star-fill:hover {
+  color: initial;
+}
+
+.small-card {
+  max-width: 300px; /* Larghezza massima della card */
+  margin: auto; /* Centra la card */
+}
+
+.medium-card {
+  max-width: 500px; /* Larghezza massima della card */
+  margin: auto; /* Centra la card */
+}
+
+.centered-img {
+  max-height: 300px; /* Altezza massima dell'immagine */
+  object-fit: cover; /* Adatta l'immagine mantenendo le proporzioni */
+}
+
+.half-page-img {
+  width: 50vw; /* 50% della larghezza della viewport */
+  height: 50vh; /* 50% dell'altezza della viewport */
+  object-fit: cover; /* Mantiene le proporzioni e riempie l'area */
+  display: block; /* Rimuove eventuali spazi sotto l'immagine */
+  margin-left: auto; /* Centra l'immagine orizzontalmente */
+  margin-right: auto; /* Centra l'immagine orizzontalmente */
+}
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altezza completa della viewport */
+  text-align: center; /* Centra il testo */
+}
+
+.btn-block {
+  display: block; /* Rende il bottone un blocco */
+  width: 100%; /* Larghezza massima */
+  height: 100%;
+}
+
+
+body {
+  padding-top: 60px; /* Altezza dell'header */
+}
+
+@media (min-width: 768px) {
+  body {
+      padding-top: 75px; /* Altezza dell'header per dispositivi più grandi */
+  }
+  .fixed-col {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #ECC30B;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra orizzontalmente */
+    text-align: center; /* Centra il testo */
+}
+
+  
+  .scroll-col {
+    margin-left: 33.3333%; 
+    padding-top: 20px; 
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
